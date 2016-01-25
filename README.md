@@ -1,4 +1,4 @@
-# Angular2Beta0StarterTemplate
+# Angular 2 Beta 0 Starter Template
 
 This is a starter template for developing Angular2 Beta 0 with ASP.NET CORE 1.0 Applications
 
