@@ -1,0 +1,18 @@
+{
+  "name": "AspNet5Angular2Demo",
+  "description": "",
+  "main": "wwwroot/index.html",
+  "authors": [
+    "FabianGosebrink <fabian.gosebrink@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FabianGosebrink/Angular2-ASPNETCore-StarterTemplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

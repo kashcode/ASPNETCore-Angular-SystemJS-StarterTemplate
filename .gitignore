@@ -1,0 +1,5 @@
+.vs/ASPNETCoreAngular2Demo/v14/*
+src/ASPNETCoreAngular2Demo/bower_components/*
+src/ASPNETCoreAngular2Demo/wwwroot/**/*.js
+src/ASPNETCoreAngular2Demo/wwwroot/**/*js.map
+.vs/ASPNETCoreAngular2Demo/v14/.suo
