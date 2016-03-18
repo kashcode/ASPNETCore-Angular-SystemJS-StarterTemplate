@@ -17,11 +17,11 @@ export class HomeComponent implements OnInit {
     constructor(private _dataService : DataService) {
         this.message = "Hello from HomeComponent constructor";
     }
-    
+
     ngOnInit() {
         this._dataService
         .GetAll()
-        .subscribe((data:any[]) => this.values = data,
+        .subscribe(data => this.values = data,
                 error => console.log(error),
                 () => console.log('Get all complete'));
     }

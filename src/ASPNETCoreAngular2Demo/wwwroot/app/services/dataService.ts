@@ -19,8 +19,8 @@ export class DataService {
         this.headers.append('Accept', 'application/json');
     }
 
-    public GetAll = (): Observable<Response> => {
-        return this._http.get(this.actionUrl).map(res => res.json());
+    public GetAll = (): Observable<any> => {
+        return this._http.get(this.actionUrl).map((response: Response) => <any>response.json());
     }
 
     public GetSingle = (id: number): Observable<Response> => {
