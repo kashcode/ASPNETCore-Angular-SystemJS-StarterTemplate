@@ -31,8 +31,8 @@ namespace ASPNETCoreAngular2Demo
 
             app.UseIISPlatformHandler();
 
-            app.UseStaticFiles();
             app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseMvc();
         }
