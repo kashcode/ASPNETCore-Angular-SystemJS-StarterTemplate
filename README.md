@@ -4,6 +4,9 @@ This is a starter template for developing Angular2 with ASP.NET CORE 1.0 Applica
 
 This template is done with npm and bower. Its an Angular2 application with an http-service getting values from an ASP.NET CORE WebAPI.
 
+You can copy the js files manually or use the gulp task
+
+<pre>gulp get:started</pre>
 
 Open a cmd, navigate to the folder containing the "project.json" file and type 
 
