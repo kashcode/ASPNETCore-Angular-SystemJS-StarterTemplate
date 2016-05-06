@@ -15,7 +15,25 @@ gulp.task('clean-Vendor-Js-In-Root', function() {
     return del(buildConfig.rootJsFolder);
 });
 
-gulp.task('copy-Vendor-Js-To-Wwwroot-Internal', function() {
-   return gulp.src(buildConfig.sources.jsFilesInclSourcePaths)
+gulp.task('copy-Vendor-Js-To-Wwwroot-Internal', function(done) {
+  runSeq(
+        'copy-angular',
+        'copy-rxjs',
+        'copy-allOther',
+        done);
+});
+
+gulp.task('copy-angular', function() {
+     return gulp.src(buildConfig.sources.angularRC)
+        .pipe(gulp.dest(buildConfig.rootJsFolder + "@angular/"))
+});
+
+gulp.task('copy-rxjs', function() {
+    return gulp.src(buildConfig.sources.Rxjs)
+        .pipe(gulp.dest(buildConfig.rootJsFolder + "rxjs/"))
+});
+
+gulp.task('copy-allOther', function() {
+     return gulp.src(buildConfig.sources.jsFilesInclSourcePaths)
         .pipe(gulp.dest(buildConfig.rootJsFolder))
 });
