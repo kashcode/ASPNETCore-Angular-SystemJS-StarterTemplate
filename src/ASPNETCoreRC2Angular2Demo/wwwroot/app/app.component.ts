@@ -1,6 +1,6 @@
-﻿import {Component} from '@angular/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
-import {HomeComponent} from './home/home.component';
+﻿import { Component } from '@angular/core';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @Component({
     selector: 'my-app',
@@ -9,8 +9,7 @@ import {HomeComponent} from './home/home.component';
     styleUrls: ['app/app.component.css']
 })
 
-@RouteConfig([
-    { path: '/Home', name: 'Home', component: HomeComponent, useAsDefault: true }
-])
- 
-export class AppComponent { }
+export class AppComponent {
+        constructor(private router: Router) {
+        }
+}
