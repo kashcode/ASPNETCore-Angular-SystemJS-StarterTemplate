@@ -1,6 +1,6 @@
-# Angular 2 ASP.NET CORE 1.0 RC2 Starter Template
+# Angular 2 ASP.NET CORE 1.0 Starter Template
 
-This is a starter template for developing Angular2 with ASP.NET CORE 1.0 RC2 Applications.
+This is a starter template for developing Angular2 with ASP.NET CORE 1.0 Applications.
 
 This template is done with npm. Its an Angular2 application with an http-service getting values from an ASP.NET CORE WebAPI.
 
