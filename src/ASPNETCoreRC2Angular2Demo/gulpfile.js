@@ -1,3 +1,4 @@
+/// <binding BeforeBuild='get:started' />
 var gulp = require('gulp');
 var runSeq = require('run-sequence');
 var del = require('del');
