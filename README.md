@@ -18,5 +18,7 @@ Now you can just press "play" inside Visual Studio to get started.
 
 If you change the *.ts-files you need to run the `tsc` command manually.
 
-![alt text][logo]
-[logo]: _gitAssets/01.jpg "Screenshot"
+See this nice link which the Angular team did by working with Visual Studio and Angular 2 [Visual Studio 2015 QuickStart
+](https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html)
+
+![alt text](_gitAssets/01.jpg "Screenshot")
