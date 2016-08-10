@@ -6,3 +6,4 @@ src/ASPNETCoreAngular2Demo/bin
 src/ASPNETCoreAngular2Demo/node_modules
 src/ASPNETCoreAngular2Demo/wwwroot/js
 .vs/
+npm-debug.log
