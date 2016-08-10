@@ -12,7 +12,7 @@ module.exports = {
             "node_modules/bootstrap/dist/js/bootstrap.js"
         ],
 
-        angularRC: "node_modules/@angular/**/*.js",
-        Rxjs: "node_modules/rxjs/**/*.js"
+        angularRC: "node_modules/@angular/**/*.*",
+        Rxjs: "node_modules/rxjs/**/*.*"
     }
 };
