@@ -12,7 +12,7 @@
   "compileOnSave": true,
   "exclude": [
     "node_modules",
-    "wwwroot",
+    "wwwroot/js",
     "typings/main",
     "typings/main.d.ts"
   ]
