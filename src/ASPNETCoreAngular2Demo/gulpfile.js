@@ -12,8 +12,10 @@ gulp.task('get:started', function(done) {
         done);
 });
 
-gulp.task('clean-Vendor-Js-In-Root', function() {
-    return del(buildConfig.rootJsFolder);
+gulp.task('clean-Vendor-Js-In-Root', function (done) {
+    del(buildConfig.rootJsFolder, { force: true }).then(function () {
+        done();
+    });
 });
 
 gulp.task('copy-Vendor-Js-To-Wwwroot-Internal', function(done) {
@@ -36,5 +38,5 @@ gulp.task('copy-rxjs', function() {
 
 gulp.task('copy-allOther', function() {
      return gulp.src(buildConfig.sources.jsFilesInclSourcePaths)
-        .pipe(gulp.dest(buildConfig.rootJsFolder))
+        .pipe(gulp.dest(buildConfig.rootJsFolder));
 });
