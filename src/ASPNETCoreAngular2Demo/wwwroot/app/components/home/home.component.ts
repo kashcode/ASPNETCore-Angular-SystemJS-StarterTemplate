@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/DataService';
+import { ToasterService } from 'angular2-toaster/angular2-toaster'
 
 @Component({
     moduleId: module.id,
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
     public message: string;
     public values: any[];
 
-    constructor(private _dataService: DataService) {
+    constructor(private _dataService: DataService, private _toasterService: ToasterService) {
         this.message = "Hello from HomeComponent constructor";
     }
 
@@ -21,6 +22,8 @@ export class HomeComponent implements OnInit {
             .GetAll()
             .subscribe(data => this.values = data,
             error => console.log(error),
-            () => console.log('Get all complete'));
+            () => {
+                this._toasterService.pop('success', 'Complete', 'Getting all values complete');
+            });
     }
 }
