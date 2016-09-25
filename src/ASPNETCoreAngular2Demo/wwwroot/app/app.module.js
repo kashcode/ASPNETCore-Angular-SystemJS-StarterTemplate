@@ -14,8 +14,9 @@ var app_component_1 = require('./app.component');
 var app_constants_1 = require('./app.constants');
 var app_routes_1 = require('./app.routes');
 var http_1 = require('@angular/http');
-var home_component_1 = require('./home/home.component');
-var about_component_1 = require('./about/about.component');
+var home_component_1 = require('./components/home/home.component');
+var about_component_1 = require('./components/about/about.component');
+var DataService_1 = require('./services/DataService');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +31,8 @@ var AppModule = (function () {
             declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, about_component_1.AboutComponent],
             providers: [
                 app_routes_1.appRoutingProviders,
-                app_constants_1.Configuration
+                app_constants_1.Configuration,
+                DataService_1.DataService
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

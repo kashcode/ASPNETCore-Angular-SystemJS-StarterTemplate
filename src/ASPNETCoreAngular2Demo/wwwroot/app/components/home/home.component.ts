@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/DataService';
+import { DataService } from '../../services/DataService';
 
 @Component({
+    moduleId: module.id,
     selector: 'home',
-    templateUrl: 'app/home/home.component.html',
-    providers: [DataService]
+    templateUrl: 'home.component.html'
 })
 
 export class HomeComponent implements OnInit {
