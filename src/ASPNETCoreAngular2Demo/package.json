@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "tsc && gulp get:started && concurrently \"npm run tsc:w\" \"dotnet run\" \"npm run lite\" ",
+    "start": "tsc && gulp get:started && concurrently \"npm run tsc:w\" \"dotnet run\" \"npm run lite\" \"gulp start-watch\"",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",

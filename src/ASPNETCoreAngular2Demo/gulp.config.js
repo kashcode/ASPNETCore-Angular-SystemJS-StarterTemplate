@@ -3,6 +3,7 @@
 module.exports = {
     rootJsFolder: "./wwwroot/js/",
     rootCssFolder: "./wwwroot/css/",
+    rootAppFolder: "./wwwroot/app/",
     sources: {
         jsFilesInclSourcePaths: [
             "node_modules/core-js/client/shim.min.js",
