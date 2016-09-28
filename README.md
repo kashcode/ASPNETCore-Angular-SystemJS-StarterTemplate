@@ -24,7 +24,7 @@ If you change the *.ts-files you need to run the `tsc` command manually.
 
 ### Option 2
 
-`npm start` will run the gulp task for you, starting the lite-server and the tsc-watcher. You have to start the ASP.NET server manually by typing `dotnet run` separately.
+`npm start` will run the gulp task for you, starting the lite-server, the dotnet server and the tsc-watcher.
 
 See this nice link which the Angular team did by working with Visual Studio and Angular 2 [Visual Studio 2015 QuickStart
 ](https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html)
