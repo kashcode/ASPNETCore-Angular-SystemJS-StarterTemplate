@@ -16,7 +16,7 @@ var app_routes_1 = require('./app.routes');
 var http_1 = require('@angular/http');
 var home_component_1 = require('./components/home/home.component');
 var about_component_1 = require('./components/about/about.component');
-var DataService_1 = require('./services/DataService');
+var dataService_1 = require('./services/dataService');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
 var footer_component_1 = require('./components/footer/footer.component');
 var navigation_component_1 = require('./components/navigation/navigation.component');
@@ -42,7 +42,7 @@ var AppModule = (function () {
             providers: [
                 app_routes_1.appRoutingProviders,
                 app_constants_1.Configuration,
-                DataService_1.DataService
+                dataService_1.DataService
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

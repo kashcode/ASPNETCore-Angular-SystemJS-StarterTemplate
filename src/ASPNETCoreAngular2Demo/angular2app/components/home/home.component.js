@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DataService_1 = require('../../services/DataService');
+var dataService_1 = require('../../services/dataService');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
 var HomeComponent = (function () {
     function HomeComponent(_dataService, _toasterService) {
@@ -31,7 +31,7 @@ var HomeComponent = (function () {
             selector: 'home',
             templateUrl: './home.component.html'
         }), 
-        __metadata('design:paramtypes', [DataService_1.DataService, angular2_toaster_1.ToasterService])
+        __metadata('design:paramtypes', [dataService_1.DataService, angular2_toaster_1.ToasterService])
     ], HomeComponent);
     return HomeComponent;
 }());
