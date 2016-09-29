@@ -6,7 +6,7 @@ import { routing, appRoutingProviders } from './app.routes';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { DataService } from './services/DataService';
+import { DataService } from './services/dataService';
 import { ToasterModule } from 'angular2-toaster/angular2-toaster'
 import { FooterComponent } from './components/footer/footer.component'
 import { NavigationComponent } from './components/navigation/navigation.component'
