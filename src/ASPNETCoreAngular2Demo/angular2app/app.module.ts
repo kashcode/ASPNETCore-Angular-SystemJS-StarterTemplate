@@ -10,6 +10,7 @@ import { DataService } from './services/dataService';
 import { ToasterModule } from 'angular2-toaster/angular2-toaster'
 import { FooterComponent } from './components/footer/footer.component'
 import { NavigationComponent } from './components/navigation/navigation.component'
+import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-bar';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
         routing,
         HttpModule,
         JsonpModule,
-        ToasterModule
+        ToasterModule,
+        SlimLoadingBarModule.forRoot()
     ],
 
     declarations: [
@@ -31,7 +33,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     providers: [
         appRoutingProviders,
         Configuration,
-        DataService
+        DataService,
+        SlimLoadingBarService
     ],
 
     bootstrap: [AppComponent]

@@ -7,7 +7,6 @@ var buildConfig = require('./gulp.config');
 
 gulp.task('get:started', function (done) {
     runSeq(
-
         'clean-vendor-js-in-root',
         'clean-vendor-css-in-root',
         'clean-app-in-root',
@@ -40,6 +39,7 @@ gulp.task('copy-vendor-js-to-wwwroot', function (done) {
         'copy-angular',
         'copy-rxjs',
         'copy-toastr',
+        'copy-loadingBar',
         'copy-allOther',
         done);
 });
@@ -66,6 +66,11 @@ gulp.task('copy-rxjs', function () {
 gulp.task('copy-toastr', function () {
     return gulp.src(buildConfig.sources.angularToastr)
         .pipe(gulp.dest(buildConfig.rootJsFolder + 'angular2-toaster/'));
+});
+
+gulp.task('copy-loadingBar', function () {
+    return gulp.src(buildConfig.sources.angularLoadingBar)
+        .pipe(gulp.dest(buildConfig.rootJsFolder + 'ng2-slim-loading-bar/'));
 });
 
 gulp.task('copy-allOther', function () {

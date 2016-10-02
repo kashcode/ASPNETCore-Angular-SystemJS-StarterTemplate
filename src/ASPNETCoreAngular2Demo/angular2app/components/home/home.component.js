@@ -11,18 +11,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var dataService_1 = require('../../services/dataService');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
+var ng2_slim_loading_bar_1 = require('ng2-slim-loading-bar');
 var HomeComponent = (function () {
-    function HomeComponent(_dataService, _toasterService) {
+    function HomeComponent(_dataService, _toasterService, _slimLoadingBarService) {
         this._dataService = _dataService;
         this._toasterService = _toasterService;
-        this.message = "Hello from HomeComponent constructor33";
+        this._slimLoadingBarService = _slimLoadingBarService;
+        this.message = "Hello from HomeComponent constructor";
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this._slimLoadingBarService.start();
         this._dataService
             .GetAll()
             .subscribe(function (data) { return _this.values = data; }, function (error) { return console.log(error); }, function () {
             _this._toasterService.pop('success', 'Complete', 'Getting all values complete');
+            _this._slimLoadingBarService.complete();
         });
     };
     HomeComponent = __decorate([
@@ -31,7 +35,7 @@ var HomeComponent = (function () {
             selector: 'home',
             templateUrl: './home.component.html'
         }), 
-        __metadata('design:paramtypes', [dataService_1.DataService, angular2_toaster_1.ToasterService])
+        __metadata('design:paramtypes', [dataService_1.DataService, angular2_toaster_1.ToasterService, ng2_slim_loading_bar_1.SlimLoadingBarService])
     ], HomeComponent);
     return HomeComponent;
 }());

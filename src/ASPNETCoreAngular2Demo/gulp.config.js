@@ -16,9 +16,11 @@ module.exports = {
         cssVendorFiles: [
             "node_modules/bootstrap/dist/css/bootstrap.css",
             "node_modules/angular2-toaster/lib/toaster.css",
+            "node_modules/ng2-slim-loading-bar/style.css",
         ],
         angularRC: "node_modules/@angular/**/*.*",
-        angularToastr: "node_modules/angular2-toaster/**/*.*",
+        angularToastr: "node_modules/angular2-toaster/**/*.js",
+        angularLoadingBar: "node_modules/ng2-slim-loading-bar/**/*.js",
         Rxjs: "node_modules/rxjs/**/*.*"
     }
 };
