@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var app_constants_1 = require('./app.constants');
 var app_routes_1 = require('./app.routes');
@@ -28,7 +29,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                app_routes_1.routing,
+                router_1.RouterModule.forRoot(app_routes_1.AppRoutes),
                 http_1.HttpModule,
                 http_1.JsonpModule,
                 angular2_toaster_1.ToasterModule,
@@ -42,7 +43,6 @@ var AppModule = (function () {
                 navigation_component_1.NavigationComponent
             ],
             providers: [
-                app_routes_1.appRoutingProviders,
                 app_constants_1.Configuration,
                 dataService_1.DataService,
                 ng2_slim_loading_bar_1.SlimLoadingBarService

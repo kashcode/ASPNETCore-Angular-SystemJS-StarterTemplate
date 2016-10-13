@@ -44,7 +44,7 @@
       'ng2-slim-loading-bar': {
         main: 'index.js',
         defaultExtension: 'js'
-      },
+      }
     }
   });
 })(this);

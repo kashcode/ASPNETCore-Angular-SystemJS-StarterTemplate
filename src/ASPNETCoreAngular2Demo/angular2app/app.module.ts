@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { Configuration } from './app.constants';
-import { routing, appRoutingProviders } from './app.routes';
+import { AppRoutes } from './app.routes';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -15,7 +16,7 @@ import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-ba
 @NgModule({
     imports: [
         BrowserModule,
-        routing,
+        RouterModule.forRoot(AppRoutes),
         HttpModule,
         JsonpModule,
         ToasterModule,
@@ -31,7 +32,6 @@ import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-ba
     ],
 
     providers: [
-        appRoutingProviders,
         Configuration,
         DataService,
         SlimLoadingBarService
