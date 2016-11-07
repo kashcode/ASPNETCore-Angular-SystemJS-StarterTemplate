@@ -20,6 +20,9 @@ var about_component_1 = require('./components/about/about.component');
 var dataService_1 = require('./services/dataService');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
 var footer_component_1 = require('./components/footer/footer.component');
+var authenticationGuard_1 = require('./guards/authenticationGuard');
+var canDeactivateGuard_1 = require('./guards/canDeactivateGuard');
+var CanLoadGuard_1 = require('./guards/CanLoadGuard');
 var navigation_component_1 = require('./components/navigation/navigation.component');
 var ng2_slim_loading_bar_1 = require('ng2-slim-loading-bar');
 var AppModule = (function () {
@@ -45,7 +48,10 @@ var AppModule = (function () {
             providers: [
                 app_constants_1.Configuration,
                 dataService_1.DataService,
-                ng2_slim_loading_bar_1.SlimLoadingBarService
+                ng2_slim_loading_bar_1.SlimLoadingBarService,
+                authenticationGuard_1.AuthenticationGuard,
+                canDeactivateGuard_1.CanDeactivateGuard,
+                CanLoadGuard_1.CanLoadGuard
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

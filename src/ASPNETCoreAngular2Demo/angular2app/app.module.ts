@@ -8,8 +8,11 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { DataService } from './services/dataService';
-import { ToasterModule } from 'angular2-toaster/angular2-toaster'
-import { FooterComponent } from './components/footer/footer.component'
+import { ToasterModule } from 'angular2-toaster/angular2-toaster';
+import { FooterComponent } from './components/footer/footer.component';
+import { AuthenticationGuard } from './guards/authenticationGuard';
+import { CanDeactivateGuard } from './guards/canDeactivateGuard';
+import { CanLoadGuard } from './guards/CanLoadGuard';
 import { NavigationComponent } from './components/navigation/navigation.component'
 import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-bar';
 
@@ -34,7 +37,10 @@ import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-ba
     providers: [
         Configuration,
         DataService,
-        SlimLoadingBarService
+        SlimLoadingBarService,
+        AuthenticationGuard,
+        CanDeactivateGuard,
+        CanLoadGuard
     ],
 
     bootstrap: [AppComponent]

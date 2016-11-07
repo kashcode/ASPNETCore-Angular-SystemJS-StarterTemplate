@@ -9,24 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
-        this.message = "Hello from About";
+var CanDeactivateGuard = (function () {
+    function CanDeactivateGuard() {
     }
-    AboutComponent.prototype.ngOnInit = function () {
+    CanDeactivateGuard.prototype.canDeactivate = function (component) {
+        // Component represents your component here
+        return component.MyCanDeactivate ? component.MyCanDeactivate() : true;
     };
-    AboutComponent.prototype.MyCanDeactivate = function () {
-        return true;
-    };
-    AboutComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'about',
-            templateUrl: './about.component.html'
-        }), 
+    CanDeactivateGuard = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], CanDeactivateGuard);
+    return CanDeactivateGuard;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.CanDeactivateGuard = CanDeactivateGuard;
+//# sourceMappingURL=canDeactivateGuard.js.map

@@ -52,6 +52,8 @@ gulp.task('copy-angular', function () {
 gulp.task('copy-app', function () {
     return gulp.src([
         './angular2app/**/*.js',
+        './angular2app/**/*.ts',
+        './angular2app/**/*.js.map',
         './angular2app/**/*.html',
         './angular2app/**/*.css',
     ])
