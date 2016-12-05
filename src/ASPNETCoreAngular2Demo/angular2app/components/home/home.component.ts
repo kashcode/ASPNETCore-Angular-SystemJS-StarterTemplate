@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/dataService';
-import { ToasterService } from 'angular2-toaster/angular2-toaster'
+import { ToasterService } from 'angular2-toaster/angular2-toaster';
 import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
 
 @Component({
@@ -17,11 +17,10 @@ export class HomeComponent implements OnInit {
     constructor(private _dataService: DataService,
         private _toasterService: ToasterService,
         private _slimLoadingBarService: SlimLoadingBarService) {
-        this.message = "Hello from HomeComponent constructor";
+        this.message = 'Hello from HomeComponent constructor';
     }
 
     ngOnInit() {
-        
         this._slimLoadingBarService.start();
 
         this._dataService

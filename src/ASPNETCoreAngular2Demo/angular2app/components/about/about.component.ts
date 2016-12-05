@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CanDeactivate } from '@angular/router';
 
 @Component({
     moduleId: module.id,
@@ -12,14 +11,14 @@ export class AboutComponent implements OnInit {
     public message: string;
 
     constructor() {
-        this.message = "Hello from About";
+        this.message = 'Hello from About';
     }
 
     ngOnInit() {
 
     }
 
-    public MyCanDeactivate() : boolean {
+    public MyCanDeactivate(): boolean {
         return true;
     }
 }

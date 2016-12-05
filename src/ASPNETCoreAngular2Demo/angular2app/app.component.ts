@@ -1,5 +1,4 @@
 ﻿import { Component } from '@angular/core';
-import { HomeComponent } from './components/home/home.component';
 
 @Component({
     moduleId: module.id,
@@ -8,5 +7,4 @@ import { HomeComponent } from './components/home/home.component';
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-}
+export class AppComponent { }

@@ -8,7 +8,7 @@ export class CanLoadGuard implements CanLoad {
 
     canLoad(route: Route): boolean {
         // return if criteial is fulfilled
-        console.log("In Canload");
+        console.log('In Canload');
         return true;
     }
 }

@@ -8,7 +8,8 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "cleanup": "rimraf node_modules && rimraf typings"
+    "cleanup": "rimraf node_modules && rimraf typings",
+    "lint": "tslint ./angular2app/**/*.ts -t verbose"
   },
   "private": true,
   "dependencies": {
