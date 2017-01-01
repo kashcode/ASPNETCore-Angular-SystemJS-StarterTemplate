@@ -1,18 +1,7 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { AuthenticationGuard } from './guards/authenticationGuard';
-import { CanDeactivateGuard } from './guards/canDeactivateGuard';
-import { CanLoadGuard } from './guards/CanLoadGuard';
+import { Routes, RouterModule } from '@angular/router';
 
-export const AppRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  {
-    path: 'about',
-    component: AboutComponent,
-    canActivate: [AuthenticationGuard],
-    canDeactivate: [CanDeactivateGuard],
-    canLoad: [CanLoadGuard]
-  }
+const AppRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
+
+export const AppRouting = RouterModule.forRoot(AppRoutes);

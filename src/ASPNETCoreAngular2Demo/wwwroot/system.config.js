@@ -20,14 +20,12 @@
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-      '@angular/router/upgrade': 'npm:@angular/router/bundles/router-upgrade.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-      '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
-      '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
 
       // Third Party
       'angular2-toaster': 'npm:angular2-toaster',
-      'ng2-slim-loading-bar': 'npm:ng2-slim-loading-bar',
+      // 'ng2-slim-loading-bar': 'npm:ng2-slim-loading-bar/bundles/index.umd.js',
+      "ng2-loading-bar": "npm:ng2-loading-bar",
 
       // other libraries
       'rxjs': 'npm:rxjs'
@@ -45,9 +43,9 @@
         defaultExtension: 'js'
       },
       'ng2-slim-loading-bar': {
-        main: 'index.js',
         defaultExtension: 'js'
-      }
+      },
+      "ng2-loading-bar": { "main": "index.js", "defaultExtension": "js" }
     }
   });
 })(this);

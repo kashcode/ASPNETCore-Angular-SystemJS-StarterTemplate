@@ -1,45 +1,28 @@
+import { HomeModule } from './modules/home/home.module';
+import { AboutModule } from './modules/about/about.module';
+import { SharedModule } from './modules/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { Configuration } from './app.constants';
-import { AppRoutes } from './app.routes';
+import { AppRouting } from './app.routes';
 import { HttpModule } from '@angular/http';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { DataService } from './services/dataService';
 import { ToasterModule } from 'angular2-toaster/angular2-toaster';
-import { FooterComponent } from './components/footer/footer.component';
-import { AuthenticationGuard } from './guards/authenticationGuard';
-import { CanDeactivateGuard } from './guards/canDeactivateGuard';
-import { CanLoadGuard } from './guards/CanLoadGuard';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { SlimLoadingBarModule, SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { LoadingBarModule } from "ng2-loading-bar";
 
 @NgModule({
     imports: [
         BrowserModule,
-        RouterModule.forRoot(AppRoutes),
+        AppRouting,
         HttpModule,
         ToasterModule,
-        SlimLoadingBarModule.forRoot()
+        LoadingBarModule,
+        SharedModule,
+        AboutModule,
+        HomeModule
     ],
 
     declarations: [
         AppComponent,
-        HomeComponent,
-        AboutComponent,
-        FooterComponent,
-        NavigationComponent
-    ],
-
-    providers: [
-        Configuration,
-        DataService,
-        SlimLoadingBarService,
-        AuthenticationGuard,
-        CanDeactivateGuard,
-        CanLoadGuard
     ],
 
     bootstrap: [AppComponent]

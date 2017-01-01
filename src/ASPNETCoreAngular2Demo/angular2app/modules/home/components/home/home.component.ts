@@ -1,7 +1,7 @@
+import { DataService } from './../../../../services/dataService';
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../services/dataService';
 import { ToasterService } from 'angular2-toaster/angular2-toaster';
-import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { LoadingBarService } from "ng2-loading-bar";
 
 @Component({
     moduleId: module.id,
@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
 
     constructor(private _dataService: DataService,
         private _toasterService: ToasterService,
-        private _slimLoadingBarService: SlimLoadingBarService) {
+        private _slimLoadingBarService: LoadingBarService) {
+
         this.message = 'Hello from HomeComponent constructor';
     }
 
@@ -25,8 +26,8 @@ export class HomeComponent implements OnInit {
 
         this._dataService
             .GetAll()
-            .subscribe(data => this.values = data,
-            error => console.log(error),
+            .subscribe((data: any) => this.values = data,
+            (error: any) => console.log(error),
             () => {
                 this._toasterService.pop('success', 'Complete', 'Getting all values complete');
                 this._slimLoadingBarService.complete();

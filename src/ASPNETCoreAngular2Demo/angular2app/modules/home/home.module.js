@@ -8,18 +8,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var home_component_1 = require('./components/home/home.component');
+var home_routes_1 = require('./home.routes');
+var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 var core_1 = require('@angular/core');
-var Configuration = (function () {
-    function Configuration() {
-        this.Server = 'http://localhost:5000/';
-        this.ApiUrl = 'api/';
-        this.ServerWithApiUrl = this.Server + this.ApiUrl;
+var common_1 = require('@angular/common');
+var HomeModule = (function () {
+    function HomeModule() {
     }
-    Configuration = __decorate([
-        core_1.Injectable(), 
+    HomeModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                http_1.HttpModule,
+                home_routes_1.HomeRoutes
+            ],
+            declarations: [
+                home_component_1.HomeComponent
+            ],
+            exports: [
+                home_component_1.HomeComponent
+            ]
+        }), 
         __metadata('design:paramtypes', [])
-    ], Configuration);
-    return Configuration;
+    ], HomeModule);
+    return HomeModule;
 }());
-exports.Configuration = Configuration;
-//# sourceMappingURL=app.constants.js.map
+exports.HomeModule = HomeModule;
+//# sourceMappingURL=home.module.js.map

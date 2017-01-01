@@ -8,7 +8,7 @@ export class AuthenticationGuard implements CanActivate {
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
         let url: string = state.url;
-
+        console.log('In canActivate');
         return this.userIsLoggedIn(url);
     }
 

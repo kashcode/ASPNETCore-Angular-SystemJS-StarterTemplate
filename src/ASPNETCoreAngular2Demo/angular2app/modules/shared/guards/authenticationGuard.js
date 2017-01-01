@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Configuration = (function () {
-    function Configuration() {
-        this.Server = 'http://localhost:5000/';
-        this.ApiUrl = 'api/';
-        this.ServerWithApiUrl = this.Server + this.ApiUrl;
+var router_1 = require('@angular/router');
+var AuthenticationGuard = (function () {
+    function AuthenticationGuard(router) {
+        this.router = router;
     }
-    Configuration = __decorate([
+    AuthenticationGuard.prototype.canActivate = function (route, state) {
+        var url = state.url;
+        console.log('In canActivate');
+        return this.userIsLoggedIn(url);
+    };
+    AuthenticationGuard.prototype.userIsLoggedIn = function (url) {
+        return true;
+    };
+    AuthenticationGuard = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], Configuration);
-    return Configuration;
+        __metadata('design:paramtypes', [router_1.Router])
+    ], AuthenticationGuard);
+    return AuthenticationGuard;
 }());
-exports.Configuration = Configuration;
-//# sourceMappingURL=app.constants.js.map
+exports.AuthenticationGuard = AuthenticationGuard;
+//# sourceMappingURL=authenticationGuard.js.map

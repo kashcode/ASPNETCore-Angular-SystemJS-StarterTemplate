@@ -6,16 +6,15 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "compileOnSave": true,
   "exclude": [
     "node_modules",
-    "wwwroot/**/*",
-    "wwwroot/js/*",
-    "typings/main",
-    "typings/main.d.ts"
+    "wwwroot/**/*"
   ]
 }

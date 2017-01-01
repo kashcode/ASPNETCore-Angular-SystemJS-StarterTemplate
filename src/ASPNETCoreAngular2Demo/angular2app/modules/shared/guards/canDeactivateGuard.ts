@@ -1,6 +1,6 @@
+import { AboutComponent } from './../../about/components/about/about.component';
 import { Injectable } from '@angular/core';
 import { CanDeactivate } from '@angular/router';
-import { AboutComponent } from '../components/about/about.component';
 
 @Injectable()
 export class CanDeactivateGuard implements CanDeactivate<AboutComponent> {

@@ -72,7 +72,7 @@ gulp.task('copy-toastr', function () {
 
 gulp.task('copy-loadingBar', function () {
     return gulp.src(buildConfig.sources.angularLoadingBar)
-        .pipe(gulp.dest(buildConfig.rootJsFolder + 'ng2-slim-loading-bar/'));
+        .pipe(gulp.dest(buildConfig.rootJsFolder + 'ng2-loading-bar/'));
 });
 
 gulp.task('copy-allOther', function () {

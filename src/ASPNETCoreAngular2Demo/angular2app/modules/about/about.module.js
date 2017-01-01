@@ -8,20 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var about_component_1 = require('./components/about/about.component');
+var about_routes_1 = require('./about.routes');
 var core_1 = require('@angular/core');
-var CanLoadGuard = (function () {
-    function CanLoadGuard() {
+var common_1 = require('@angular/common');
+var AboutModule = (function () {
+    function AboutModule() {
     }
-    CanLoadGuard.prototype.canLoad = function (route) {
-        // return if criteial is fulfilled
-        console.log("In Canload");
-        return true;
-    };
-    CanLoadGuard = __decorate([
-        core_1.Injectable(), 
+    AboutModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule,
+                about_routes_1.AboutRoutes
+            ],
+            declarations: [
+                about_component_1.AboutComponent
+            ],
+            exports: [
+                about_component_1.AboutComponent
+            ]
+        }), 
         __metadata('design:paramtypes', [])
-    ], CanLoadGuard);
-    return CanLoadGuard;
+    ], AboutModule);
+    return AboutModule;
 }());
-exports.CanLoadGuard = CanLoadGuard;
-//# sourceMappingURL=canLoadGuard.js.map
+exports.AboutModule = AboutModule;
+//# sourceMappingURL=about.module.js.map

@@ -9,23 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AuthenticationGuard = (function () {
-    function AuthenticationGuard(router) {
-        this.router = router;
+var AboutComponent = (function () {
+    function AboutComponent() {
+        this.message = 'Hello from About';
     }
-    AuthenticationGuard.prototype.canActivate = function (route, state) {
-        var url = state.url;
-        return this.userIsLoggedIn(url);
+    AboutComponent.prototype.ngOnInit = function () {
     };
-    AuthenticationGuard.prototype.userIsLoggedIn = function (url) {
+    AboutComponent.prototype.MyCanDeactivate = function () {
         return true;
     };
-    AuthenticationGuard = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], AuthenticationGuard);
-    return AuthenticationGuard;
+    AboutComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'about',
+            templateUrl: './about.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AboutComponent);
+    return AboutComponent;
 }());
-exports.AuthenticationGuard = AuthenticationGuard;
-//# sourceMappingURL=authenticationGuard.js.map
+exports.AboutComponent = AboutComponent;
+//# sourceMappingURL=about.component.js.map
