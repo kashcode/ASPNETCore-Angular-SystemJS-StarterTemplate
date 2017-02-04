@@ -13,12 +13,13 @@ module.exports = {
             "node_modules/jquery/dist/jquery.js",
             "node_modules/bootstrap/dist/js/bootstrap.js"
         ],
-        cssVendorFiles: [
+        cssFiles: [
             "node_modules/bootstrap/dist/css/bootstrap.css",
             "node_modules/angular2-toaster/lib/toaster.css",
             "node_modules/ng2-slim-loading-bar/style.css",
+            "./css/custom.css",
         ],
-        angularRC: "node_modules/@angular/**/*.*",
+        angular: "node_modules/@angular/**/*.*",
         angularToastr: "node_modules/angular2-toaster/**/*.js",
         angularLoadingBar: "node_modules/ng2-loading-bar/**/*.js",
         Rxjs: "node_modules/rxjs/**/*.*"

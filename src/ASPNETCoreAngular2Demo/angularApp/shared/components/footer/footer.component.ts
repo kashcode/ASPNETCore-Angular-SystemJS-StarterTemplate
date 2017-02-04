@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'starterTemplateFooter',
+    selector: 'startertemplatefooter',
     templateUrl: './footer.component.html'
 })
 

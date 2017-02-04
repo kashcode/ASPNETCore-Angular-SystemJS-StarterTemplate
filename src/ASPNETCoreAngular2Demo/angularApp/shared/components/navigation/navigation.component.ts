@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'starterTemplateNavigation',
+    selector: 'startertemplatenavigation',
     templateUrl: './navigation.component.html'
 })
 

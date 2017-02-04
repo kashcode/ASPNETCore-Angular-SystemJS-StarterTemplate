@@ -9,6 +9,7 @@ gulp.task('build:dev', function (done) {
         'clean-vendor-js-in-root',
         'clean-vendor-css-in-root',
         'clean-app-in-root',
+        'copy-system-js',
         'copy-app',
         'copy-vendor-js-to-wwwroot',
         'copy-vendor-css-to-wwwroot',
@@ -44,7 +45,7 @@ gulp.task('copy-vendor-js-to-wwwroot', function (done) {
 });
 
 gulp.task('copy-angular', function () {
-    return gulp.src(buildConfig.sources.angularRC)
+    return gulp.src(buildConfig.sources.angular)
         .pipe(gulp.dest(buildConfig.rootJsFolder + '@angular/'));
 });
 
@@ -64,6 +65,11 @@ gulp.task('copy-rxjs', function () {
         .pipe(gulp.dest(buildConfig.rootJsFolder + 'rxjs/'));
 });
 
+gulp.task('copy-system-js', function () {
+    return gulp.src('./system.config.js')
+        .pipe(gulp.dest('./wwwroot/'));
+});
+
 gulp.task('copy-toastr', function () {
     return gulp.src(buildConfig.sources.angularToastr)
         .pipe(gulp.dest(buildConfig.rootJsFolder + 'angular2-toaster/'));
@@ -80,7 +86,7 @@ gulp.task('copy-allOther', function () {
 });
 
 gulp.task('copy-vendor-css-to-wwwroot', function () {
-    return gulp.src(buildConfig.sources.cssVendorFiles)
+    return gulp.src(buildConfig.sources.cssFiles)
         .pipe(gulp.dest(buildConfig.rootCssFolder));
 });
 
