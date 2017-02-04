@@ -8,7 +8,8 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "lint": "tslint ./angular2app/**/*.ts -t verbose"
+    "lint": "tslint ./angular2app/**/*.ts -t verbose",
+    "dist": "gulp build:prod"
   },
   "private": true,
   "dependencies": {
