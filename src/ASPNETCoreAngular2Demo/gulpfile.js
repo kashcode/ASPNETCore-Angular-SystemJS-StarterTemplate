@@ -51,11 +51,11 @@ gulp.task('copy-angular', function () {
 
 gulp.task('copy-app', function () {
     return gulp.src([
-        './angular2app/**/*.js',
-        './angular2app/**/*.ts',
-        './angular2app/**/*.js.map',
-        './angular2app/**/*.html',
-        './angular2app/**/*.css',
+        './angularApp/**/*.js',
+        './angularApp/**/*.ts',
+        './angularApp/**/*.js.map',
+        './angularApp/**/*.html',
+        './angularApp/**/*.css',
     ])
         .pipe(gulp.dest('./wwwroot/app/'));
 });
@@ -87,8 +87,8 @@ gulp.task('copy-vendor-css-to-wwwroot', function () {
 
 gulp.task('start-watch', function () {
     gulp.watch([
-        './angular2app/**/*.js',
-        './angular2app/**/*.html',
-        './angular2app/**/*.css',
+        './angularApp/**/*.js',
+        './angularApp/**/*.html',
+        './angularApp/**/*.css',
     ], ['copy-app']);
 });
