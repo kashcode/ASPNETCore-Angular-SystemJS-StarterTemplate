@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var dataService_1 = require('./../../../../services/dataService');
+var values_data_service_1 = require('./../../../core/services/values-data.service');
 var core_1 = require('@angular/core');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
-var ng2_loading_bar_1 = require("ng2-loading-bar");
+var ng2_loading_bar_1 = require('ng2-loading-bar');
 var HomeComponent = (function () {
     function HomeComponent(_dataService, _toasterService, _slimLoadingBarService) {
         this._dataService = _dataService;
@@ -35,7 +35,7 @@ var HomeComponent = (function () {
             selector: 'home',
             templateUrl: './home.component.html'
         }), 
-        __metadata('design:paramtypes', [dataService_1.DataService, angular2_toaster_1.ToasterService, ng2_loading_bar_1.LoadingBarService])
+        __metadata('design:paramtypes', [values_data_service_1.DataService, angular2_toaster_1.ToasterService, ng2_loading_bar_1.LoadingBarService])
     ], HomeComponent);
     return HomeComponent;
 }());

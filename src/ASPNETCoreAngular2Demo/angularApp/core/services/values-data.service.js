@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
-var app_constants_1 = require('../app.constants');
+var app_constants_1 = require('../../app.constants');
 var DataService = (function () {
     function DataService(_http, _configuration) {
         var _this = this;
@@ -47,4 +47,4 @@ var DataService = (function () {
     return DataService;
 }());
 exports.DataService = DataService;
-//# sourceMappingURL=dataService.js.map
+//# sourceMappingURL=values-data.service.js.map

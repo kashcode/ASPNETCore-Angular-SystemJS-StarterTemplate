@@ -8,16 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var home_module_1 = require('./modules/home/home.module');
-var about_module_1 = require('./modules/about/about.module');
-var shared_module_1 = require('./modules/shared/shared.module');
+var home_module_1 = require('./home/home.module');
+var about_module_1 = require('./about/about.module');
+var shared_module_1 = require('./shared/shared.module');
+var core_module_1 = require('./core/core.module');
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var app_routes_1 = require('./app.routes');
 var http_1 = require('@angular/http');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
-var ng2_loading_bar_1 = require("ng2-loading-bar");
+var ng2_loading_bar_1 = require('ng2-loading-bar');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,7 +32,8 @@ var AppModule = (function () {
                 ng2_loading_bar_1.LoadingBarModule,
                 shared_module_1.SharedModule,
                 about_module_1.AboutModule,
-                home_module_1.HomeModule
+                home_module_1.HomeModule,
+                core_module_1.CoreModule
             ],
             declarations: [
                 app_component_1.AppComponent,

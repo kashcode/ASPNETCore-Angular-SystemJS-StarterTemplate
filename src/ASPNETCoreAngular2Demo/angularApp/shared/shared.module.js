@@ -12,8 +12,7 @@ var canLoadGuard_1 = require('./guards/canLoadGuard');
 var canDeactivateGuard_1 = require('./guards/canDeactivateGuard');
 var authenticationGuard_1 = require('./guards/authenticationGuard');
 var footer_component_1 = require('./components/footer/footer.component');
-var dataService_1 = require('./../../services/dataService');
-var app_constants_1 = require('./../../app.constants');
+var app_constants_1 = require('./../app.constants');
 var navigation_component_1 = require('./components/navigation/navigation.component');
 var router_1 = require('@angular/router');
 var core_1 = require('@angular/core');
@@ -36,7 +35,6 @@ var SharedModule = (function () {
                 footer_component_1.FooterComponent
             ],
             providers: [
-                dataService_1.DataService,
                 app_constants_1.Configuration,
                 authenticationGuard_1.AuthenticationGuard,
                 canDeactivateGuard_1.CanDeactivateGuard,
