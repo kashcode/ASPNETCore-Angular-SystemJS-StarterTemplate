@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var AuthenticationGuard = (function () {
     function AuthenticationGuard(router) {
         this.router = router;
@@ -22,11 +22,11 @@ var AuthenticationGuard = (function () {
     AuthenticationGuard.prototype.userIsLoggedIn = function (url) {
         return true;
     };
-    AuthenticationGuard = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], AuthenticationGuard);
     return AuthenticationGuard;
 }());
+AuthenticationGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router])
+], AuthenticationGuard);
 exports.AuthenticationGuard = AuthenticationGuard;
 //# sourceMappingURL=authenticationGuard.js.map

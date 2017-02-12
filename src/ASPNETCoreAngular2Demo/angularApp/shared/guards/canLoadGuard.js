@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var CanLoadGuard = (function () {
     function CanLoadGuard() {
     }
@@ -17,11 +17,11 @@ var CanLoadGuard = (function () {
         console.log('In Canload');
         return true;
     };
-    CanLoadGuard = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CanLoadGuard);
     return CanLoadGuard;
 }());
+CanLoadGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], CanLoadGuard);
 exports.CanLoadGuard = CanLoadGuard;
 //# sourceMappingURL=canLoadGuard.js.map
