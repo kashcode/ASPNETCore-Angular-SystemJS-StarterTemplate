@@ -6,7 +6,7 @@ This template is done with npm. Its an Angular application with an http-service 
 
 ## Blogpost
 
-[Angular and ASP.NET Core Starter](http://offering.solutions/blog/articles/2016/01/25/angular-and-asp-net-core-starter/)
+[Angular and ASP.NET Core Starter](http://offering.solutions/blog/articles/2016/01/25/angular-2-asp-net-core-starter/)
 
 ## Start
 
