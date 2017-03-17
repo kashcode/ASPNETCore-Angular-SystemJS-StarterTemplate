@@ -36,4 +36,4 @@ TO start the backend type `dotnet run`
 See this nice link which the Angular team did by working with Visual Studio and Angular [Visual Studio 2015 QuickStart
 ](https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html)
 
-![alt text](_gitAssets/03bff784-213f-4836-be3c-7288a33396a3.jpg "Screenshot")
+![alt text](.github/03bff784-213f-4836-be3c-7288a33396a3.jpg "Screenshot")
