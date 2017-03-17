@@ -1,6 +1,6 @@
 import { DataService } from './../../../core/services/values-data.service';
 import { Component, OnInit } from '@angular/core';
-import { ToasterService } from 'angular2-toaster/angular2-toaster';
+import { ToasterService } from 'angular2-toaster';
 import { LoadingBarService } from 'ng2-loading-bar';
 
 @Component({

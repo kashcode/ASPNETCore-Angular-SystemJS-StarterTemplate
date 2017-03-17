@@ -23,7 +23,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // Third Party
-      'angular2-toaster': 'npm:angular2-toaster',
+      'angular2-toaster': 'npm:angular2-toaster/bundles/angular2-toaster.umd.js',
       // 'ng2-slim-loading-bar': 'npm:ng2-slim-loading-bar/bundles/index.umd.js',
       "ng2-loading-bar": "npm:ng2-loading-bar",
 

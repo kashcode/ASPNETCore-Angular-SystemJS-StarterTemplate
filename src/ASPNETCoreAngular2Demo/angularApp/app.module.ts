@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routes';
 import { HttpModule } from '@angular/http';
-import { ToasterModule } from 'angular2-toaster/angular2-toaster';
+import { ToasterModule } from 'angular2-toaster';
 import { LoadingBarModule } from 'ng2-loading-bar';
 
 @NgModule({

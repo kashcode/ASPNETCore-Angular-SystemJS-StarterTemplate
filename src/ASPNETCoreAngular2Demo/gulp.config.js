@@ -15,8 +15,7 @@ module.exports = {
         ],
         cssFiles: [
             "node_modules/bootstrap/dist/css/bootstrap.css",
-            "node_modules/angular2-toaster/lib/toaster.css",
-            "node_modules/ng2-slim-loading-bar/style.css",
+            "node_modules/angular2-toaster/toaster.css",
             "./css/custom.css",
         ],
         angular: "node_modules/@angular/**/*.*",

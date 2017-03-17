@@ -14,7 +14,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var app_routes_1 = require("./app.routes");
 var http_1 = require("@angular/http");
-var angular2_toaster_1 = require("angular2-toaster/angular2-toaster");
+var angular2_toaster_1 = require("angular2-toaster");
 var ng2_loading_bar_1 = require("ng2-loading-bar");
 var AppModule = (function () {
     function AppModule() {

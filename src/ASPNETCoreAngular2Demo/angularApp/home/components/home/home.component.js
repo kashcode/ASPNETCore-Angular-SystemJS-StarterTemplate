@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var values_data_service_1 = require("./../../../core/services/values-data.service");
 var core_1 = require("@angular/core");
-var angular2_toaster_1 = require("angular2-toaster/angular2-toaster");
+var angular2_toaster_1 = require("angular2-toaster");
 var ng2_loading_bar_1 = require("ng2-loading-bar");
 var HomeComponent = (function () {
     function HomeComponent(_dataService, _toasterService, _slimLoadingBarService) {
