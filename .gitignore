@@ -13,3 +13,5 @@ src/ASPNETCoreAngular2Demo/wwwroot/app/
 src/ASPNETCoreAngular2Demo/wwwroot/css
 src/ASPNETCoreAngular2Demo/.vscode
 src/ASPNETCoreAngular2Demo/.temp
+src/ASPNETCoreAngular2Demo/angularApp/**/*.js
+src/ASPNETCoreAngular2Demo/angularApp/**/*.js.map
