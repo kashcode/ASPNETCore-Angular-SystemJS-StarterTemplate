@@ -1,0 +1,3 @@
+[submodule "src/ASPNETCoreAngular2Demo/angularApp/shared/ng2-eonasdan-datetimepicker"]
+	path = src/ASPNETCoreAngular2Demo/angularApp/shared/ng2-eonasdan-datetimepicker
+	url = git@github.com:kashcode/ng2-eonasdan-datetimepicker.git

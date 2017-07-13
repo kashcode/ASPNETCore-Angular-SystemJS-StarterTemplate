@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class AboutComponent implements OnInit {
 
-    public message: string;
+    public message: string;    
 
     constructor() {
         this.message = 'Hello from About';
     }
 
     ngOnInit() {
-
-    }
+        
+    }    
 
     public MyCanDeactivate(): boolean {
         return true;

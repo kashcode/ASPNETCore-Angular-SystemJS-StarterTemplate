@@ -60,7 +60,7 @@ gulp.task('prod-web-copy-app-to-temp', function (done) {
         './angularApp/**/*.js',
         './angularApp/**/*.ts',
         './angularApp/**/*.html',
-        './angularApp/**/*.css',
+        './angularApp/**/*.css'
     ])
         .pipe(gulp.dest('./.temp/app/'));
 });

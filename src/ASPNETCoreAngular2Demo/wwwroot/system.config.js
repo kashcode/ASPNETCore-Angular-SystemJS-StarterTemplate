@@ -27,7 +27,12 @@
       // 'ng2-slim-loading-bar': 'npm:ng2-slim-loading-bar/bundles/index.umd.js',
       "ng2-loading-bar": "npm:ng2-loading-bar",
 
-      // other libraries
+      // other libraries      
+      'ng2-eonasdan-datetimepicker': 'npm:',
+      'jquery': 'npm:jquery.js',
+      'bootstrap': 'npm:bootstrap.js',
+      'moment': 'npm:',
+      'eonasdan-bootstrap-datetimepicker': 'npm:bootstrap-datetimepicker.js',
       'rxjs': 'npm:rxjs'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -44,8 +49,19 @@
       },
       'ng2-slim-loading-bar': {
         defaultExtension: 'js'
+      },      
+      "ng2-loading-bar": {
+          "main": "index.js",
+          "defaultExtension": "js"
       },
-      "ng2-loading-bar": { "main": "index.js", "defaultExtension": "js" }
+      'moment': {
+          main: './moment-with-locales.js',
+          defaultExtension: 'js'
+      }, 
+      'ng2-eonasdan-datetimepicker': {
+          main: 'datetimepicker.module.js',
+          defaultExtension: 'js'
+      }
     }
   });
 })(this);

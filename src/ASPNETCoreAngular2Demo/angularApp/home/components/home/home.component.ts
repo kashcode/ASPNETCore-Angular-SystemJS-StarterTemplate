@@ -2,6 +2,7 @@ import { DataService } from './../../../core/services/values-data.service';
 import { Component, OnInit } from '@angular/core';
 import { ToasterService } from 'angular2-toaster';
 import { LoadingBarService } from 'ng2-loading-bar';
+import * as moment from 'moment';
 
 @Component({
     moduleId: module.id,
@@ -18,10 +19,11 @@ export class HomeComponent implements OnInit {
         private _toasterService: ToasterService,
         private _slimLoadingBarService: LoadingBarService) {
 
-        this.message = 'Hello from HomeComponent constructor';
+        this.message = 'Hello from HomeComponent constructor ';
     }
 
     ngOnInit() {
+        console.log(moment());
         this._slimLoadingBarService.start();
 
         this._dataService

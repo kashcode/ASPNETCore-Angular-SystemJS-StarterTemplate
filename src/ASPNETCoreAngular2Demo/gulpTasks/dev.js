@@ -55,7 +55,7 @@ gulp.task('copy-app', function () {
         './angularApp/**/*.ts',
         './angularApp/**/*.js.map',
         './angularApp/**/*.html',
-        './angularApp/**/*.css',
+        './angularApp/**/*.css'
     ])
         .pipe(gulp.dest('./wwwroot/app/'));
 });
@@ -94,6 +94,6 @@ gulp.task('start-watch', function () {
     gulp.watch([
         './angularApp/**/*.js',
         './angularApp/**/*.html',
-        './angularApp/**/*.css',
+        './angularApp/**/*.css'
     ], ['copy-app']);
 });
