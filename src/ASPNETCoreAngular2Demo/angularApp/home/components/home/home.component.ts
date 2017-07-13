@@ -15,6 +15,11 @@ export class HomeComponent implements OnInit {
     public message: string;
     public values: any[];
 
+    dateFrom: moment.Moment = moment().add(-2, 'd');
+    dateFromOptions: any = {
+        format: "DD.MM.YYYY."
+    };
+
     constructor(private _dataService: DataService,
         private _toasterService: ToasterService,
         private _slimLoadingBarService: LoadingBarService) {
@@ -34,5 +39,13 @@ export class HomeComponent implements OnInit {
                 this._toasterService.pop('success', 'Complete', 'Getting all values complete');
                 this._slimLoadingBarService.complete();
             });
+    }
+
+    dateFromChange(date) {
+        this.dateFrom = date;
+    }
+
+    dateFromClick() {
+        console.log('click click!')
     }
 }

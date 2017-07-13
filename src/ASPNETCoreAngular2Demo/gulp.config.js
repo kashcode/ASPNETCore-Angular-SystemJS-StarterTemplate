@@ -4,6 +4,7 @@ module.exports = {
     rootJsFolder: "./wwwroot/js/",
     rootCssFolder: "./wwwroot/css/",
     rootAppFolder: "./wwwroot/app/",
+    rootFontFolder: "./wwwroot/fonts",
     sources: {
         jsFilesInclSourcePaths: [
             "node_modules/core-js/client/shim.min.js",
@@ -21,6 +22,9 @@ module.exports = {
             "node_modules/angular2-toaster/toaster.css",
             "./css/custom.css",
             "node_modules/eonasdan-bootstrap-datetimepicker/build/css/*.css"
+        ],
+        fontFiles: [
+            "node_modules/bootstrap/dist/fonts/*.*"
         ],
         angular: "node_modules/@angular/**/*.*",
         angularToastr: "node_modules/angular2-toaster/**/*.js",

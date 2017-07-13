@@ -8,11 +8,13 @@ gulp.task('build:dev', function (done) {
     runSeq(
         'clean-vendor-js-in-root',
         'clean-vendor-css-in-root',
+        'clean-vendor-font-in-root',
         'clean-app-in-root',
         'copy-system-js',
         'copy-app',
         'copy-vendor-js-to-wwwroot',
         'copy-vendor-css-to-wwwroot',
+        'copy-vendor-font-to-wwwroot',
         done);
 });
 
@@ -24,6 +26,12 @@ gulp.task('clean-vendor-js-in-root', function (done) {
 
 gulp.task('clean-vendor-css-in-root', function (done) {
     del(buildConfig.rootCssFolder, { force: true }).then(function () {
+        done();
+    });
+});
+
+gulp.task('clean-vendor-font-in-root', function (done) {
+    del(buildConfig.rootFontFolder, { force: true }).then(function () {
         done();
     });
 });
@@ -88,6 +96,11 @@ gulp.task('copy-allOther', function () {
 gulp.task('copy-vendor-css-to-wwwroot', function () {
     return gulp.src(buildConfig.sources.cssFiles)
         .pipe(gulp.dest(buildConfig.rootCssFolder));
+});
+
+gulp.task('copy-vendor-font-to-wwwroot', function () {
+    return gulp.src(buildConfig.sources.fontFiles)
+        .pipe(gulp.dest(buildConfig.rootFontFolder));
 });
 
 gulp.task('start-watch', function () {

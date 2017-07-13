@@ -13,6 +13,20 @@
                 </li>
             </ul>
         </div>
+        <div class="col-md-3">
+            <label>Datums no:</label>
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control"
+                           name="dateFrom"
+                           a2e-datetimepicker
+                           [date]="dateFrom"
+                           [options]="dateFromOptions"
+                           (onChange)="dateFromChange($event)" />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- /container -->

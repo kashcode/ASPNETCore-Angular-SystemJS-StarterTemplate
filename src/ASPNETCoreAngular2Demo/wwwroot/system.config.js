@@ -28,10 +28,9 @@
       "ng2-loading-bar": "npm:ng2-loading-bar",
 
       // other libraries      
-      'ng2-eonasdan-datetimepicker': 'npm:',
       'jquery': 'npm:jquery.js',
       'bootstrap': 'npm:bootstrap.js',
-      'moment': 'npm:',
+      'moment': 'npm:moment-with-locales.js',
       'eonasdan-bootstrap-datetimepicker': 'npm:bootstrap-datetimepicker.js',
       'rxjs': 'npm:rxjs'
     },
@@ -54,12 +53,10 @@
           "main": "index.js",
           "defaultExtension": "js"
       },
-      'moment': {
-          main: './moment-with-locales.js',
+      'moment': {          
           defaultExtension: 'js'
-      }, 
-      'ng2-eonasdan-datetimepicker': {
-          main: 'datetimepicker.module.js',
+      },
+      'eonasdan-bootstrap-datetimepicker': {
           defaultExtension: 'js'
       }
     }
